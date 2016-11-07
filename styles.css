@@ -6,17 +6,13 @@ ul.navi {
   background-color: #6441a5;
 }
 
-li {
-float: left;
-border-right: 1px solid #9e69c6;
-}
-
 li a {
+float: left;
 display: block;
 color: white;
 text-align: center;
 padding: 14px 16px;
-text-decoration: bold;
+text-decoration: none;
 }
 
 li a:hover {
