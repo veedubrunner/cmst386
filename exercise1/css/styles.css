@@ -1,3 +1,11 @@
+/*Header Gradient*/
+header {
+    text-align: center;
+    background: white;
+    background: linear-gradient(#ffffff, #6441a5);
+}
+
+/*Navigation*/
 ul.navi {
   list-style-type: none;
   margin: 0;
@@ -5,49 +13,35 @@ ul.navi {
   overflow: hidden;
   background-color: #6441a5;
 }
-
 li {
   float: left;
 }
-
 li a, .dropbtn {
 display: block;
 color: white;
 text-align: center;
 padding: 14px 16px;
 border-right: 1px solid #7b5499;
-
 text-decoration: none;
 }
-
 li a:hover, .drop:hover {
 background-color: #7b5499;
 color: #ffffff;
 }
-
 .active {
     background-color: #7b5499;
     border: 1px;
-    }
-
-header {
-    text-align: center;
-    background: white;
-    background: linear-gradient(#ffffff, #6441a5);
 }
-
 li.drop {
     display: inline-block;
-  }
-
+}
 .dropstuff {
   display: none;
     position: absolute;
     background-color: #6441a5;
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-
+}
 .dropstuff a {
         color: white;
         padding: 12px 16px;
@@ -57,4 +51,26 @@ li.drop {
 }
 .drop:hover .dropstuff {
     display: block;
+}
+
+/* Image Gallery */
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
