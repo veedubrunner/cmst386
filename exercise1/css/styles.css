@@ -121,3 +121,7 @@ a.link {
   color: #6441a5;
   font-weight: bold;
 }
+
+img.pcm {
+  float:right;
+}
