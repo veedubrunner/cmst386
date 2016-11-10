@@ -1,9 +1,21 @@
-/*Header Gradient*/
+body {
+  font-family: 'Amatic SC', cursive;
+}
+
+.twitter-timeline {
+  text-align: right;
+}
+/*Header*/
 header {
-    text-align: center;
     background: white;
     background: linear-gradient(#ffffff, #6441a5);
+    font-size:64px;
+    font-weight: 700;
 }
+  img.logo {
+    width: 10%;
+    margin-left: 10px;
+  }
 
 /*Navigation*/
 ul.navi {
@@ -12,8 +24,8 @@ ul.navi {
   padding: 0;
   overflow: hidden;
   background-color: #6441a5;
-}
-li {
+  font-size: 28px;
+}ul.navi li {
   float: left;
 }
 li a, .dropbtn {
@@ -54,6 +66,13 @@ li.drop {
 }
 
 /* Image Gallery */
+div.imgbox {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 div.img {
     margin: 5px;
     border: 1px solid #ccc;
@@ -73,4 +92,32 @@ div.img img {
 div.desc {
     padding: 15px;
     text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.ptitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+.ex1 {
+  font-family: Verdana;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.ex1b {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul.ex1 {
+  text-decoration: none;
+}
+
+a.link {
+  text-decoration:none;
+  color: #6441a5;
+  font-weight: bold;
 }
