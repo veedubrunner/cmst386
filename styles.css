@@ -26,9 +26,7 @@ ul.navi {
   background-color: #6441a5;
   font-size: 28px;
 }
-li {
-  float: left;
-}
+
 li a, .dropbtn {
 display: block;
 color: white;
@@ -36,6 +34,7 @@ text-align: center;
 padding: 14px 16px;
 border-right: 1px solid #7b5499;
 text-decoration: none;
+float: left;
 }
 li a:hover, .drop:hover {
 background-color: #7b5499;
