@@ -29,6 +29,7 @@ ul.navi {
 
 ul.navi li {
   float: left;
+
 }
 
 li a, .dropbtn {
@@ -38,11 +39,13 @@ text-align: center;
 padding: 14px 16px;
 border-right: 1px solid #7b5499;
 text-decoration: none;
+transition: 1s;
 
 }
 li a:hover, .drop:hover {
 background-color: #7b5499;
 color: #ffffff;
+
 }
 .active {
     background-color: #7b5499;
