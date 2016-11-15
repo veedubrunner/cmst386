@@ -27,6 +27,10 @@ ul.navi {
   font-size: 28px;
 }
 
+li {
+  float: left;
+}
+
 li a, .dropbtn {
 display: block;
 color: white;
@@ -103,12 +107,14 @@ div.desc {
   font-family: Verdana;
   font-size: 20px;
   list-style-type: none;
+  float: none;
 }
 
 .prop1b {
   font-family: Verdana;
   font-size: 20px;
   font-weight: 700;
+  float: none;
 }
 
 ul.prop1 {
