@@ -27,7 +27,7 @@ ul.navi {
   font-size: 28px;
 }
 
-li {
+ul.navi li {
   float: left;
 }
 
@@ -107,14 +107,12 @@ div.desc {
   font-family: Verdana;
   font-size: 20px;
   list-style-type: none;
-  float: none;
 }
 
 .prop1b {
   font-family: Verdana;
   font-size: 20px;
   font-weight: 700;
-  float: none;
 }
 
 ul.prop1 {
