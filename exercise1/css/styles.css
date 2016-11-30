@@ -25,9 +25,16 @@ ul.navi {
   overflow: hidden;
   background-color: #6441a5;
   font-size: 28px;
-}ul.navi li {
+}
+
+ul.navi li {
   float: left;
 }
+
+ul.navi li.contact {
+  float: right;
+}
+
 li a, .dropbtn {
 display: block;
 color: white;
