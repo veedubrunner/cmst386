@@ -2,6 +2,9 @@ body {
   font-family: 'Amatic SC', cursive;
 }
 
+.twitter-timeline {
+  text-align: right;
+}
 /*Header*/
 header {
     background: white;
@@ -23,9 +26,14 @@ ul.navi {
   background-color: #6441a5;
   font-size: 28px;
 }
-li {
+
+ul.navi li {
   float: left;
 }
+ul.navi li.contact {
+  float: right;
+}
+
 li a, .dropbtn {
 display: block;
 color: white;
@@ -96,4 +104,74 @@ div.desc {
 .ptitle {
     text-align: center;
     font-size: 40px;
+}
+
+.ptitle1 {
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.ex1 {
+  font-family: Verdana;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.ex1b {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul.ex1 {
+  text-decoration: none;
+}
+
+a.link {
+  text-decoration:none;
+  color: #6441a5;
+  font-weight: bold;
+}
+
+img.pcm {
+  float:right;
+}
+
+.ex2box {
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: #6441a5;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+
+.mid {
+  text-align: center;
+}
+
+.h2m {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h3m {
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h3l {
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact {
+  float: right;
 }

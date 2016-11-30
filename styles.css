@@ -29,7 +29,10 @@ ul.navi {
 
 ul.navi li {
   float: left;
+}
 
+ul.navi li.contact {
+  float: right;
 }
 
 li a, .dropbtn {
