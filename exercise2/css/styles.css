@@ -25,9 +25,15 @@ ul.navi {
   overflow: hidden;
   background-color: #6441a5;
   font-size: 28px;
-}ul.navi li {
+}
+
+ul.navi li {
   float: left;
 }
+ul.navi li.contact {
+  float: right;
+}
+
 li a, .dropbtn {
 display: block;
 color: white;
@@ -100,6 +106,12 @@ div.desc {
     font-size: 40px;
 }
 
+.ptitle1 {
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
 .ex1 {
   font-family: Verdana;
   font-size: 20px;
@@ -124,4 +136,42 @@ a.link {
 
 img.pcm {
   float:right;
+}
+
+.ex2box {
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: #6441a5;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+
+.mid {
+  text-align: center;
+}
+
+.h2m {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h3m {
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h3l {
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact {
+  float: right;
 }
