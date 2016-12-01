@@ -33,7 +33,28 @@
   <h2 class="h3m">Click the button below to use my temperature converter.</h2>
   <div class="h3m">
     <button onclick="converter()" class="tempbtn">Temp Converter</button>
+  </div>
 
+  <h2 class="h3m">OR<br>Enter your information below to convert a temperature!</h2>
+
+  <div class="ex2box">
+    <form id="tempcon" name="tempcon" action="#">
+      <h3 class="h3m">Enter your temperature:
+        <input type="text" id="usertemp" value="" size="12">
+      </h3>
+
+      <h3 class="h3m">Select your temperature's current scale:
+        <input type="radio" name="radtemp" id="radfahr">F
+        <input type="radio" name="radtemp" id="radcelc">C
+      </h3>
+      <h3 class="h3m">
+        <input type="button" class="tempbtn" name="tempconv" value="Convert!" onclick= "gconverter()">
+      </h3>
+      <h3 class="h3m">
+        <input type="text" id="results" size="20">
+      </h3>
+    </form>
+  </div>
 
 </body>
 </html>

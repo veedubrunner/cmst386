@@ -23,3 +23,21 @@ else if(ttype == "c")
 else alert("Invalid entry. Please enter 'f' or 'c'.");
 
 }
+
+function gconverter(){
+  var tempin = document.getElementById("usertemp");
+  var tempout = document.getElementById("results");
+  var newtemp;
+  var fahr = document.getElementById("radfahr");
+  var celc = document.getElementById("radcelc");
+  if(fahr.checked){
+    tempin = parsefloat(tempin);
+    newtemp = (tempin - 32) * 5 /9;
+    tempout.value = +newtemp.toFixed(2) + "&deg; Celcius";
+    }
+  else if (celc.checked){
+    tempin = parsefloat(tempin);
+    newtemp = (tempin * 1.8) + 32;
+    tempout.value = +newtemp.toFixed(2) + "&deg; Fahrenheit";
+  }
+}
