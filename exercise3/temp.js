@@ -33,11 +33,11 @@ function gconverter(){
   tempin= parseFloat(tempin);
   if(fahr.checked){
     newtemp = (tempin - 32) * 5 /9;
-    tempout.value = newtemp + "° Celcius";
+    tempout.value = +newtemp.toFixed(2) + "° Celcius";
     }
   else if(celc.checked){
     newtemp = (tempin * 1.8) + 32;
-    tempout.value = newtemp + "° Fahrenheit";
+    tempout.value = +newtemp.toFixed(2) + "° Fahrenheit";
   }
   return;
 }
