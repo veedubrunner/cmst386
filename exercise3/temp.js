@@ -9,7 +9,7 @@ if(ttype == "f")
       alert("Please enter a number.");
   }
   else newtemp = (temp - 32) * (5 / 9);
-  alert(temp + " f is equal to " + +newtemp.toFixed(2) +" c.<br> This program created by Jonathan Ketchum.");
+  alert(temp + " f is equal to " + +newtemp.toFixed(2) +" c.\n This program created by Jonathan Ketchum.");
 }
 else if(ttype == "c")
 {
@@ -18,7 +18,7 @@ else if(ttype == "c")
       alert("Please enter a number.");
   }
   else newtemp = temp * 1.8 + 32;
-  alert(temp + " c is equal to " + +newtemp.toFixed(2) +" f.<br> This program created by Jonathan Ketchum.");
+  alert(temp + " c is equal to " + +newtemp.toFixed(2) +" f.\n This program created by Jonathan Ketchum.");
 }
 else alert("Invalid entry. Please enter 'f' or 'c'.");
 
