@@ -32,6 +32,7 @@
 
 
       <h1 class="h2m">Casino Chip Counter</h1>
+
       <div class="ex2box">
         <p class="h3m">Full Name:<input id="FName" type="text" size="30" required></input>
         <input id="USyes" type="checkbox" onclick="getSSN()">U.S. Citizen?</input><br>
@@ -41,7 +42,9 @@
         <p class="h3m">Please enter the amount of your first receipt and click "add".<br>
         <input id="Receiptin" type="text" size="15" maxlength="6"></input><br>
         <button id="addReceipt" class="tempbtn" onclick="ReceiptAdd()">Add</button></p>
+
         <div class="divflex">
+
           <div class="divf">
             <h3 class="h3m">Chip Values</h3>
               <table class="table1">
@@ -71,6 +74,7 @@
                 </tr>
               </table>
           </div>
+
           <div class="divf">
             <h3 class="h3m">Chip Count</h3>
             <table>
@@ -102,20 +106,23 @@
             <h3 class="h3m">Total</h3>
             <input id="cTotal" type="text" size="10" onchange="getsubtotal()" readonly></input>
           </div>
+
           <div class="divf">
             <h3 class="h3m">Receipts</h3>
             <textarea id="RecBox" rows="10" cols="8" readonly></textarea>
             <h3 class="h3m">Total</h3>
             <input id="RecTotal" type="text" size="10" readonly></input>
           </div>
-        </div>
-        <div class= "ex2box">
-          <p class="h3m">Subtotal: <input id="winsub" type="text" size="12"></input>
-            Taxes: <input id="taxes" type="text" size="12"></input><br>
-            Total Winnings:<input id="winnings" type="text" size="12"></input>
-          </p>
 
         </div>
+
+        <div class= "ex2box">
+          <p class="h3m">Subtotal: <input id="winsub" type="text" size="12" readonly></input>
+            Taxes: <input id="taxes" type="text" size="12" readonly></input><br>
+            Total Winnings:<input id="winnings" type="text" size="12" readonly></input>
+          </p>
+        </div>
+
       </div>
 
 
