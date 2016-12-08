@@ -5,18 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../exercise4/css/styles.css">
-  <title>Exercise 4 Home - Jonathan</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <script type="text/javascript" src="casino.js">
+  </script>
+  <title>Casino Chip Counter - Jonathan</title>
 </head>
 <body>
-  <h1>Welcome to my CMST 386 Exercise 4 Page!</h1>
 
-<ul class="navi">
- <li><a href="../index.html">Home</a></li>
- <li><a href="../exercise1/index.html">Exercise 1</a></li>
- <li><a href="../exercise2/index.html">Exercise 2</a></li>
- <li><a href="../exercise3/index.html">Exercise 3</a></li>
- <li><a class="active" href="../exercise4/index.html">Exercise 4</a></li>
-</ul>
+    <header>
+      <img class="logo" src="../images/logo_textless.png" alt="logo">VeeDub Runner
+    </header>
+
+    <ul class="navi">
+     <li><a href="../index.html">Home</a></li>
+     <li class="drop"><a class="dropbtn" href="../exercise1/index.html">Exercise 1</a>
+       <div class="dropstuff">
+         <a href="../exercise1/gallery.html">Gallery</a>
+       </div>
+      </li>
+     <li><a href="../exercise2/index.html">Exercise 2</a></li>
+     <li><a href="../exercise3/index.html">Exercise 3</a></li>
+     <li><a class="active" href="../exercise4/index.html">Exercise 4</a></li>
+     <li><a href="../proposal.html">Proposal</a></li>
+     <li class="contact"><a href="../exercise2/contact.html">Contact Me</a></li>
+    </ul>
+
+
+      <h1 class="h2m">Casino Chip Counter</h1>
+      <div class="ex2box">
+        <p class="h3m">Full Name:<input id="FName" type="text" size="30" required></input>
+        <input id="USyes" type="checkbox" onclick="getSSN()">U.S. Citizen?</input><br>
+        Social Security Number:<input id="SSN" type="text" maxlength="9" disabled></input>
+        </p>
+
+        <p class="h3m">Please enter the amount of your first receipt and click "add".<br>
+        <input id="Receiptin" type="text" size="15" maxlength="6"></input><br>
+        <button id="addReceipt" class="tempbtn" onclick="ReceiptAdd()">Add</button></p>
+        <div class="divflex">
+          <div class="divf">
+            <h3 class="h3m">Chip Values</h3>
+          </div>
+          <div class="divf">
+            <h3 class="h3m">Chip Count</h3>
+          </div>
+          <div class="divf">
+            <h3 class="h3m">Receipts</h3>
+            <textarea id="RecBox" rows="20" cols="8" readonly></textarea>
+            <h3 class="h3m">Total</h3>
+            <input id="RecTotal" type="text" size="10" readonly></input>
+          </div>
+        </div>
+      </div>
+
 
 </body>
 </html>
