@@ -10,3 +10,10 @@ var social = document.getElementById("SSN");
     social.required = false;
   }
 }
+
+function receiptbox(){
+
+}
+function chipcounter(){
+
+}
