@@ -41,7 +41,7 @@
 
         <p class="h3m">Please enter the amount of your first receipt and click "add".<br>
         <input id="Receiptin" type="text" size="15" maxlength="6"></input><br>
-        <button id="addReceipt" class="tempbtn" onclick="ReceiptAdd()">Add</button></p>
+        <button id="addReceipt" class="tempbtn" onclick="addReceipt()">Add</button></p>
 
         <div class="divflex">
 
@@ -80,51 +80,53 @@
             <table>
               <tr>
                 <td>Black</td>
-                <td><input id="cBlack" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cBlack" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
               <tr>
                 <td>Blue</td>
-                <td><input id="cBlue" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cBlue" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
               <tr>
                 <td>Red</td>
-                <td><input id="cRed" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cRed" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
               <tr>
                 <td>Green</td>
-                <td><input id="cGreen" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cGreen" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
               <tr>
                 <td>Purple</td>
-                <td><input id="cPurple" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cPurple" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
               <tr>
                 <td>Gold</td>
-                <td><input id="cGold" type="text" size="3" onchange="chipcounter()"></input></td>
+                <td><input id="cGold" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
               </tr>
             </table>
             <h3 class="h3m">Total</h3>
-            <input id="cTotal" type="text" size="10" onchange="getsubtotal()" readonly></input>
+            <input id="cTotal" type="text" size="10" value="0" readonly></input>
           </div>
 
           <div class="divf">
             <h3 class="h3m">Receipts</h3>
             <textarea id="RecBox" rows="10" cols="8" readonly></textarea>
             <h3 class="h3m">Total</h3>
-            <input id="RecTotal" type="text" size="10" readonly></input>
+            <h3 class="h3m">$<input id="RecTotal" type="text" size="10" value="0" readonly></input></h3>
           </div>
 
         </div>
 
         <div class= "ex2box">
-          <p class="h3m">Subtotal: <input id="winsub" type="text" size="12" readonly></input>
+          <p class="h3m">Subtotal: <input id="winsub" type="text" size="12" value="0" readonly></input>
             Taxes: <input id="taxes" type="text" size="12" readonly></input><br>
             Total Winnings:<input id="winnings" type="text" size="12" readonly></input>
           </p>
+          <p class="h3m"><button id="addTotal" class="tempbtn" onclick="getwinnings()">Calculate Winnings</button></p>
         </div>
 
       </div>
 
+        <h3 class="h3m"><img src="../images/casino.png" alt="casino"></h3>
 
 </body>
 </html>
