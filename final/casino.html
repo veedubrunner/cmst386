@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <script type="text/javascript" src="final.js">
+  </script>
+  <title>Casino Chip Counter - Jonathan</title>
+</head>
+<body>
+
+
+  <ul class="navi">
+   <li class="logo"><img src="../images/logo_textless.png" alt="logo" height="50px" widht="60px">VeeDub Runner</li>
+   <li><a href="index.html">Home</a></li>
+   <li class="drop"><a class="dropbtn" href="about.html">About Me</a>
+     <div class="dropstuff">
+       <a href="blog.html">Blog</a>
+       <a  class="active" href="casino.html">Casino</a>
+     </div>
+   </li>
+   <li class="drop"><a class="dropbtn" href="twitch.html">Twitch</a>
+     <div class="dropstuff">
+       <a href="schedule.html">Schedule</a>
+       <a href="charity.html">Charity</a>
+     </div>
+   </li>
+   <li><a href="youtube.html">Youtube</a></li>
+   <li><a href="deviantart.html">DeviantArt</a></li>
+   <li class="contact"><a href="contact.html">Contact Me</a></li>
+  </ul>
+
+
+      <h1 class="h2m">Casino Chip Counter</h1>
+      <p class="h3m">I created this simple Javascript program in my CMST 386 class<br> to calculate gambling winnings based on user input. Enjoy!</p>
+
+      <div class="ex2box">
+        <p class="h3m">Full Name:<input id="FName" type="text" size="30" required></input>
+        <input id="USyes" type="checkbox" onclick="getSSN()">U.S. Citizen?</input><br>
+        Social Security Number:<input id="SSN" type="text" maxlength="9" value="123456789" placeholder="123456789" disabled></input>
+        </p>
+
+        <p class="h3m">Please enter the amount of your first receipt and click "add".<br>
+        <input id="Receiptin" type="text" size="15" maxlength="6"></input><br>
+        <button id="addReceipt" class="tempbtn" onclick="addReceipt()">Add</button></p>
+
+        <div class="divflex">
+
+          <div class="divf">
+            <h3 class="h3m">Chip Values</h3>
+              <table class="table1">
+                <tr>
+                  <td>Black</td>
+                  <td>$5</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                  <td>$20</td>
+                </tr>
+                <tr>
+                  <td>Red</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>Green</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>Purple</td>
+                  <td>$500</td>
+                </tr>
+                <tr>
+                  <td>Gold</td>
+                  <td>$1000</td>
+                </tr>
+              </table>
+          </div>
+
+          <div class="divf">
+            <h3 class="h3m">Chip Count</h3>
+            <table>
+              <tr>
+                <td>Black</td>
+                <td><input id="cBlack" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+              <tr>
+                <td>Blue</td>
+                <td><input id="cBlue" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+              <tr>
+                <td>Red</td>
+                <td><input id="cRed" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+              <tr>
+                <td>Green</td>
+                <td><input id="cGreen" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+              <tr>
+                <td>Purple</td>
+                <td><input id="cPurple" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+              <tr>
+                <td>Gold</td>
+                <td><input id="cGold" type="text" size="3" value="0" onchange="chipcounter()"></input></td>
+              </tr>
+            </table>
+            <h3 class="h3m">Total</h3>
+            <input id="cTotal" type="text" size="10" value="0" readonly></input>
+          </div>
+
+          <div class="divf">
+            <h3 class="h3m">Receipts</h3>
+            <textarea id="RecBox" rows="10" cols="8" readonly></textarea>
+            <h3 class="h3m">Total</h3>
+            <h3 class="h3m">$<input id="RecTotal" type="text" size="10" value="0" readonly></input></h3>
+          </div>
+
+        </div>
+
+        <div class= "ex2box">
+          <p class="h3m">Subtotal: <input id="winsub" type="text" size="12" value="0" readonly></input>
+            Taxes: <input id="taxes" type="text" size="12" readonly></input><br>
+            Total Winnings:<input id="winnings" type="text" size="12" readonly></input>
+          </p>
+          <p class="h3m"><button id="addTotal" class="tempbtn" onclick="getwinnings()">Calculate Winnings</button></p>
+        </div>
+
+      </div>
+
+        <h3 class="h3m"><img src="../images/casino.png" alt="casino"></h3>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+  background-color:#ed9797;
+}
+ul.navi {
+  background-color: #db0000;
+}
+li a, .dropbtn {
+border-right: 1px solid #d65353;
+}
+li a:hover, .drop:hover {
+  background-color: #d65353;
+  color: #ffffff;
+}
+.active {
+  background-color:#d65353;
+}
+.dropstuff {
+  background-color: #db0000;
