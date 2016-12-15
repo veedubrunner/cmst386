@@ -266,3 +266,9 @@ th,td{
     height: 400px;
     padding:20px;
   }
+  .equip{
+    height: 275px;
+  }
+  .centerpic{
+    text-align: center;
+  }
