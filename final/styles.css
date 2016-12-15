@@ -4,7 +4,11 @@ body {
   background-color: #c0c6f9;
   font-family: 'PT Mono', monospace;
 }
+ footer {
 
+   margin-bottom: 30px;
+   text-align: right;
+ }
 .twitter-timeline {
   float: right;
 }
@@ -23,7 +27,7 @@ ul.navi {
   padding: 0;
   overflow: hidden;
   background-color: #002491;
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Press Start 2P', cursive;
 
 }
@@ -237,3 +241,28 @@ th,td{
   border: 3px solid;
   border-color: #6441a5;
 }
+.blogbox {
+  border: 5px solid;
+  border-radius: 10px;
+  border-color: #002491;
+  width: 90%;
+  margin: auto;
+  height: 800px;
+}
+.entry{
+  border: 3px solid;
+  border-color: #002491;
+  margin: auto;
+  }
+  .cbox {
+    border: 5px solid;
+    border-radius: 10px;
+    border-color: #002491;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  }
+  .boxart{
+    height: 400px;
+    padding:20px;
+  }
